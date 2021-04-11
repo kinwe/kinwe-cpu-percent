@@ -50,8 +50,9 @@ func init()  {
 	if cpu_quota != -1 {
 
 		cpuNum = cpu_quota / cpu_period
+	}else {
+		cpuNum = runtime.NumCPU()
 	}
-	cpuNum =  runtime.NumCPU()
 }
 
 func Percent(interval time.Duration) ([]float64, error) {

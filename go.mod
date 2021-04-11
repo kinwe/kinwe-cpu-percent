@@ -1,1 +1,1 @@
-module "cpuPercent"
+module "github.com/kinwe/kinwe-cpu-percent"
